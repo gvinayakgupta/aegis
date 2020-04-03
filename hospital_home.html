@@ -12,11 +12,11 @@
     <body>
         <header>
             <nav class="navbar navbar-expand nav-dark">
-                <a class="navbar-brand" href="index.html">Aegis</a>
+                <a class="navbar-brand" href="index.html"><img src="assets/logo_long_white.png" width="100px"></a>
                 <!-- Navbar-->
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                        <a class="nav-link dropdown-toggle text-white" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                             <a class="dropdown-item" href="#">Admin Settings</a>
                             <div class="dropdown-divider"></div>
@@ -26,5 +26,49 @@
                 </ul>
             </nav>
         </header>
+        <section class="container">
+            <div class="area">
+                <div class="row">
+                    <div class="part">Total Beds: </div>
+                    <div class="part">Occupied: </div>
+                    <div class="part">Empty: </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="area2">
+                        <button class="qr" onclick="QR()">QR Code Scanner</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="area bed">
+                        <div class="bedinfo"><h1>Bed Info</h1></div>
+                        <div class="bedinfo"><h3>Current status</h3></div>
+                        <div class="bedinfo">
+                            <div class="row">
+                                <button id="btn-l" class="col-6" onclick="lbtn()">Occupied</button>
+                                <button id="btn-r" class="col-6" onclick="rbtn()">Empty</button>
+                            </div>
+                        </div>
+                        <div class="bedinfo">
+                            <button class="sub">Confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            var value;
+            function lbtn(){
+                document.getElementById("btn-l").classList.add("selected");
+                document.getElementById("btn-r").classList.remove("selected");
+                value = 1;
+            }
+            function rbtn(){
+                document.getElementById("btn-l").classList.remove("selected");
+                document.getElementById("btn-r").classList.add("selected");
+                value = 1;
+            }
+        </script>
     </body>
 </html>
