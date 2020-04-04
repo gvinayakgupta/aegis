@@ -30,9 +30,9 @@
         <section class="container">
             <div class="area">
                 <div class="row">
-                    <div class="part">Total Beds: </div>
-                    <div class="part">Occupied: </div>
-                    <div class="part">Empty: </div>
+                    <div class="part">Total Beds: <span id="total">000</span></div>
+                    <div class="part">Occupied: <span id="occ">000</span></div>
+                    <div class="part">Empty: <span id="empty">000</span></div>
                 </div>
             </div>
             <div class="row">
@@ -59,7 +59,18 @@
             </div>
         </section>
         <script>
-            var value;
+            var HospitalId, value;
+            $(document).ready(function() {
+                HospitalId = String(window.location).split("?#")[1];
+                document.getElementById("total").innerHTML="500";
+                document.getElementById("occ").innerHTML="100";
+                document.getElementById("empty").innerHTML="400";
+            });
+            function QR(){
+                var d = document.getElementsByClassName("bed");
+                d[0].style.display="block";
+                console.log(d);
+            }
             function lbtn(){
                 document.getElementById("btn-l").classList.add("selected");
                 document.getElementById("btn-r").classList.remove("selected");

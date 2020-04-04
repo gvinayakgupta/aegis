@@ -1,62 +1,38 @@
-s
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WELCOME</title>
-    <link rel="stylesheet" href="WELCOME.css">
+    <link rel="stylesheet" href="welcome.css">
     <link rel="icon" href="assets/favicon.png" type="image/png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <style>
-        #anc1 {
-            text-decoration: none;
-            color:white;
-        }
-
-        #anc2 {
-            text-decoration: none;
-            color:white;
-        }
-
-        #anc3 {
-            text-decoration: none;
-            color:white;
-        }
-    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js" crossorigin="anonymous"></script>
+        
 </head>
 
-<body class="bg">
-
+<body class="container">
     <div id="heading">
         <img src="assets/logo_large.png" alt="" width="200 px">
-
     </div>
-    <div id="hello">
-
-        <i class="material-icons">person</i>
-        HELLO USER!
+    <div class="row justify-content-center">
+        <div id="hello" class="col-12">
+            <i class="fas fa-user"></i>
+            HELLO USER!
+        </div>
+        <div id="what" class="col-12">
+            WHAT DO YOU WANT TO DO ?
+        </div>    
     </div>
-    <div id="what">
-        WHAT DO YOU WANT TO DO ?
+    <div class="btn-group row">
+        <a class="col-12" href="#"><button><i style='font-size:24px' class='fas fa-hospital'></i>
+                FIND THE NEAREST HOSPITAL<i style='font-size:24px' class='fas fa-hospital'></i></button></a>
+        <a class="col-12" href="#"><button><i style='font-size:24px' class='fas fa-exclamation-triangle'></i>GATHERING
+                ALERT<i style='font-size:24px' class='fas fa-exclamation-triangle'></i></button></a>
+        <a class="col-12" href="#"><button><i class="fas fa-exclamation-circle"></i>
+                SOS / DANGER ALERT<i class="fas fa-exclamation-circle"></i></button></a>
     </div>
-    <div class="btn-group">
-        <a id="anc1" href="http://google.com"><button><i style='font-size:24px' class='fas'>&#xf7f2;</i>
-                FIND THE NEAREST HOSPITAL<i style='font-size:24px' class='fas'>&#xf7f2;</i></button></a>
-        <a id="anc2" href="http://facebook.com"><button><i style='font-size:24px' class='fas'>&#xf071;</i>GATHERING
-                ALERT<i style='font-size:24px' class='fas'>&#xf071;</i></button></a>
-        <a id="anc3" href="http://yahoo.com"><button><i class="material-icons">&#xe003;</i>
-                SOS / DANGER ALERT<i class="material-icons">&#xe003;</i></button></a>
-    </div>
-
-
-
-
 </body>
 
 </html>
