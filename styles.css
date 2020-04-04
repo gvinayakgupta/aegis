@@ -12,11 +12,11 @@ body{
 }
 
 #cover{
-    background-image: url(https://cdn.pixabay.com/photo/2020/03/11/14/49/covid-19-4922342_960_720.jpg);
+    background: linear-gradient(-45deg, #EE7752, #E73C7E,#23A6D5, #23D5AB);
     min-height: 100vh;
     width: 100vw;
     background-repeat: round;
-    background-size: auto;
+    background-size: cover;
     
 }
 .about h1
@@ -25,9 +25,8 @@ body{
     text-align: center;
 }
 .quote{
-    color: #fc8820;
+    color: white;
     text-align: center;
-    left: -10%;
     position: relative;
     }
  button
@@ -43,32 +42,31 @@ body{
 }
 .about
 {
-    width: 35%;
+    width: 80%;
     height: 50%;
-    margin-left: 55%;
+    margin-left: 10%;
     margin-top: 2%;
     position: absolute;
-    
 }
 .about p
 {
-    color: white;
+    color: black;
     //overflow: scroll;
     text-align: justify;
-    color: white;
+    font-size: 1.3 rem;
 }
 #cnt{
     min-height: 20vh;
-    background-color: #222;
+    background-color: #fc8820;
+    margin-top: 40%;
 }
 a{
-    color: #FC8820;
+    color: white;
 }
 
 .title{
-    text-align: left;
+    text-align: center;
     padding-top: 25vh;
-    float: left;
 }
 
 .logo{
@@ -77,10 +75,10 @@ a{
     opacity: 1;
 }
 @media only screen and (max-width: 576px){
-    .about{
+   /* .about{
         width:80%;
         top: 110%;
-        left: -50%;
+        left: 50%;
         text-align: left;
         }
     .about p
@@ -97,24 +95,24 @@ a{
         text-align: center;
         margin-left: 24%;
         margin-top: 20%;
-    }
+    }*/
     .quote
     {
         text-align: center;
-        left:  -80%;
+        left:  -0%;
         visibility: hidden;
     }
-    #cover{
+    /*#cover{
         width: 100%;
         height: 100%;
-    }
+    }*/
     #cnt
     {
         margin-top: 150%;
     }
 }
 @media only screen and (max-width: 768px){
-    .about{
+    /*.about{
         width:90%;
         top: 110%;
         left: -50%;
@@ -134,17 +132,17 @@ a{
         text-align: center;
         margin-left: 36%;
         margin-top: 10%;
-    }
+    }*/
     .quote
     {
         text-align: center;
         left:  -80%;
         visibility: hidden;
-    }
+    }/*
     #cover{
         width: 100%;
         height: 100%;
-    }
+    }*/
     #cnt
     {
         margin-top: 150%;
