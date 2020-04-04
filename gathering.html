@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Aegis</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="login_style.css">
+    
+<style>
+    .loginbox input[type="radio"]
+{
+    border: none;
+    /*border-bottom: 1px solid #fff;*/
+    background: transparent;
+    outline: none;
+    height: 20px;
+    color: #000;
+    position: relative;
+    left: -50%;
+    
+}
+    textarea{
+        width: 100%;
+        }    
+</style>
+<body>
+    <div class="loginbox" style="margin-top: 10%">
+    <img src="assets/favicon.png" class="logo">
+        <h1>Gatherig Alert!!!</h1>
+        <h4>Do you see any gathering that could lead to spread of virus? report us</h4>
+        <form>
+            
+				
+			<span>Gathering at your location?</span>
+            <P>Location by GPS</P><input type="radio" name="" value="gps"><br>
+            <span style="border-top-style: dashed;">Gather some place away from you</span><br>
+            <P>Laction by address</P>
+            <textarea rows="4" cols="30" name="comment" form="usrform">Enter full address of crowded area...</textarea><br><br>
+            <span style="border-top-style: dashed;">Optional comments</span>
+            <P>comments</P>
+            <textarea rows="4" cols="30" name="comment" form="usrform">Enter comments...</textarea>
+            <a href="#"><input type="button" name="" value="Alert"></a>
+            
+        
+            
+        </form>
+        
+    </div>
+
+</body>
+</head>
+</html>
