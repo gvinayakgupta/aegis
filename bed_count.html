@@ -19,7 +19,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle text-white" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user"></i></a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-                            <a class="dropdown-item" href="hospital_admin_login.html">Admin Settings</a>
+                            <a class="dropdown-item" href="admin_hospital.html">Admin Home</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="index.html">Logout</a>
                         </div>
@@ -36,19 +36,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="area2">
-                        <button class="qr" onclick="QR()">QR Code Scanner</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
+                <div class="col-12">
                     <div class="area bed">
-                        <div class="bedinfo"><h1>Bed Info</h1></div>
-                        <div class="bedinfo"><h3>Current status</h3></div>
+                        <div class="bedinfo"><h1>Bed Count</h1></div>
+                        <div class="bedinfo"><input type="number"></div>
                         <div class="bedinfo">
                             <div class="row">
-                                <button id="btn-l" class="col-6" onclick="lbtn()">Occupied</button>
-                                <button id="btn-r" class="col-6" onclick="rbtn()">Empty</button>
+                                <button id="btn-l" class="col-6" onclick="lbtn()">Add</button>
+                                <button id="btn-r" class="col-6" onclick="rbtn()">Remove</button>
                             </div>
                         </div>
                         <div class="bedinfo">
@@ -65,11 +60,11 @@
                 document.getElementById("total").innerHTML="500";
                 document.getElementById("occ").innerHTML="100";
                 document.getElementById("empty").innerHTML="400";
-            });
-            function QR(){
-                alert("Scan a QR Code");
                 var d = document.getElementsByClassName("bed");
                 d[0].style.display="block";
+            });
+            function QR(){
+                alert("Scan a QR Code");    
             }
             function lbtn(){
                 document.getElementById("btn-l").classList.add("selected");
