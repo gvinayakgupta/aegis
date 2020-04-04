@@ -1,0 +1,70 @@
+body, html {
+    height: 100%;
+  }
+  
+  .bg {
+    /* The image used */
+    background-image: url("https://cdn.pixabay.com/photo/2020/03/11/14/49/covid-19-4922342_1280.jpg");
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #heading{
+      color: #f78e06;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      
+      font-weight: bold;
+      text-align: center;
+  }
+ #hello
+{
+    color:hsl(34, 95%, 50%);
+    font-family:Ubuntu, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align:right;
+}
+#what
+{
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-align:center;
+    font-size: x-large;
+    padding-left: 500 em;
+    margin-bottom:40px ;
+    border-radius: 100px;
+    border-color:white;
+    background-color: orange;
+    max-width: fit-content;
+  
+}
+.btn-group button {
+    text-align: center;
+    background-color: rgb(0, 0, 0); /* Green background */
+    border: 1px solid orange; /* Green border */
+    color: white; /* White text */
+    padding:50px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 100%; /* Set a width if needed */
+    display: ruby; /* Make the buttons appear below each other */
+    font-weight: bolder;
+    font-weight: larger;
+    font-family:Ubuntu,Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom:20px;
+    font-size: x-large;
+    border-radius:50%;
+    text-decoration:none;
+  }
+  
+  
+  
+  
+  .btn-group button:hover {
+    background-color:orange;
+    color: black;
+  }
