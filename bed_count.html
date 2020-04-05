@@ -39,7 +39,7 @@
                 <div class="col-12">
                     <div class="area bed">
                         <div class="bedinfo"><h1>Bed Count</h1></div>
-                        <div class="bedinfo"><input type="number"></div>
+                        <div class="bedinfo"><input id="count" type="number"></div>
                         <div class="bedinfo">
                             <div class="row">
                                 <button id="btn-l" class="col-6" onclick="lbtn()">Add</button>
@@ -47,25 +47,22 @@
                             </div>
                         </div>
                         <div class="bedinfo">
-                            <button class="sub">Confirm</button>
+                            <button class="sub" onclick="update()">Confirm</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <script>
-            var HospitalId, value;
+            var HospitalId, value=0, x=500,y=400;
             $(document).ready(function() {
                 HospitalId = String(window.location).split("?#")[1];
-                document.getElementById("total").innerHTML="500";
-                document.getElementById("occ").innerHTML="100";
-                document.getElementById("empty").innerHTML="400";
+                document.getElementById("total").innerHTML=x;
+                document.getElementById("occ").innerHTML=x-y;
+                document.getElementById("empty").innerHTML=y;
                 var d = document.getElementsByClassName("bed");
                 d[0].style.display="block";
             });
-            function QR(){
-                alert("Scan a QR Code");    
-            }
             function lbtn(){
                 document.getElementById("btn-l").classList.add("selected");
                 document.getElementById("btn-r").classList.remove("selected");
@@ -74,7 +71,24 @@
             function rbtn(){
                 document.getElementById("btn-l").classList.remove("selected");
                 document.getElementById("btn-r").classList.add("selected");
-                value = 1;
+                value = -1;
+            }
+            function update(){
+                if(value===0){
+                    alert("Select Add/Remove");
+                } else{
+                    var v = value*parseInt(document.getElementById("count").value);
+                    if(isNaN(v)){
+                        alert("Enter no. of beds");
+                    }
+                    else{
+                        document.getElementById("total").innerHTML=x+v;
+                        document.getElementById("empty").innerHTML=y+v;
+                        x = x+v;
+                        y = y+v;
+                        alert("Refer email for further steps..");
+                    }
+                }
             }
         </script>
     </body>

@@ -1,8 +1,3 @@
-
-
-
-
-
 @font-face {
   font-family: Lato-Regular;
   src: url('../fonts/Lato/Lato-Regular.ttf'); 
@@ -37,7 +32,7 @@ a {
 
 h1,h2,h3,h4,h5,h6 {margin: 0px;
 color: #fc8820;
-left: 20vw;
+margin-left: 40%;
 }
 
 p {margin: 0px;}
@@ -47,7 +42,17 @@ ul, li {
 	list-style-type: none;
 }
 
-
+button
+{
+    background-color: #fc8820;
+    color: white;
+    border: solid;
+    border-radius: 20px;
+    width: 100px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 50%;
+}
 
 input {
   display: block;
@@ -62,13 +67,6 @@ textarea {
 
 textarea:focus, input:focus {
   border-color: transparent !important;
-}
-
-
-
-
-
-
 }
 
 

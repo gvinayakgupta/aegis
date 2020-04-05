@@ -59,14 +59,6 @@ textarea:focus, input:focus {
   border-color: transparent !important;
 }
 
-
-
-
-
-
-
-
-
 .js-pscroll {
   position: relative;
   overflow: hidden;
@@ -110,9 +102,6 @@ textarea:focus, input:focus {
   top: 15px;
 }
 
-
-
-
 .limiter {
   width: 1366px;
   margin: 0 auto;
@@ -137,7 +126,6 @@ textarea:focus, input:focus {
 .wrap-table100 {
   width: 1170px;
 }
-
 
 .table100 {
   background-color: #fff;
@@ -207,9 +195,10 @@ button
 }
 .selected
 {
-  background-color: #fc8820;
-  color: white;
+  background-color: #fc8820!important;
+  color: white!important;
 }
+
 /*==================================================================
 [ Fix header ]*/
 .table100 {
@@ -228,8 +217,6 @@ button
   max-height: 585px;
   overflow: auto;
 }
-
-
 
 .table100.ver1 th {
   font-family: Lato-Bold;
